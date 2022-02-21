@@ -1,0 +1,262 @@
+diff all
+
+# version
+# INAV/MATEKF411SE 3.0.1 Jul  4 2021 / 14:22:48 (753c4479)
+# GCC-9.3.1 20200408 (release)
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults noreboot
+
+# resources
+
+# mixer
+
+mmix reset
+
+mmix 0  1.000  0.000  0.000  0.000
+mmix 1  1.000  0.000  0.000  0.000
+
+# servo mix
+smix reset
+
+smix 0 3 0 50 0 -1
+smix 1 3 1 50 0 -1
+smix 2 4 0 -50 0 -1
+smix 3 4 1 50 0 -1
+
+# servo
+servo 3 1000 2000 1614 -100
+servo 4 1000 2000 1426 100
+
+# safehome
+
+# logic
+logic 0 1 -1 4 1 12 0 0 0
+logic 1 1 -1 5 1 12 0 0 0
+logic 2 1 -1 6 1 12 0 0 0
+logic 3 1 0 25 0 1 0 0 0
+logic 4 1 1 25 0 2 0 0 0
+logic 5 1 2 25 0 3 0 0 0
+
+# gvar
+
+# pid
+
+# feature
+feature MOTOR_STOP
+feature GPS
+feature LED_STRIP
+feature PWM_OUTPUT_ENABLE
+feature FW_LAUNCH
+
+# beeper
+
+# map
+
+# serial
+serial 0 2 115200 115200 0 115200
+serial 30 2048 115200 115200 0 115200
+
+# led
+led 0 0,0::GI:4
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1700 2100
+aux 1 1 1 900 1300
+aux 2 12 1 1700 2100
+aux 3 10 2 1700 2100
+aux 4 11 2 1300 1700
+aux 5 3 2 1300 1700
+aux 6 28 5 1700 2100
+aux 7 37 3 1300 1700
+aux 8 21 3 1775 2100
+aux 9 15 4 900 1300
+aux 10 42 6 1300 1700
+aux 11 43 6 1675 2075
+
+# adjrange
+
+# rxrange
+
+# temp_sensor
+
+# wp
+#wp 0 invalid
+
+# osd_layout
+osd_layout 0 0 2 4 V
+osd_layout 0 1 1 13 V
+osd_layout 0 2 0 0 V
+osd_layout 0 3 8 6 V
+osd_layout 0 4 8 6 V
+osd_layout 0 5 23 13 V
+osd_layout 0 6 23 12 V
+osd_layout 0 7 1 12 V
+osd_layout 0 9 1 9 V
+osd_layout 0 10 1 14 V
+osd_layout 0 11 1 8 V
+osd_layout 0 12 23 11 V
+osd_layout 0 13 1 6 V
+osd_layout 0 14 24 1 V
+osd_layout 0 15 1 5 V
+osd_layout 0 22 12 14 V
+osd_layout 0 23 14 14 V
+osd_layout 0 24 12 2 V
+osd_layout 0 25 23 5 V
+osd_layout 0 26 24 7 V
+osd_layout 0 28 24 12 H
+osd_layout 0 29 1 1 V
+osd_layout 0 30 0 3 V
+osd_layout 0 31 24 2 V
+osd_layout 0 34 10 1 V
+osd_layout 0 35 1 11 V
+osd_layout 0 40 23 14 V
+osd_layout 0 41 25 4 V
+osd_layout 0 42 25 5 V
+osd_layout 0 100 24 8 V
+osd_layout 1 0 1 1 V
+osd_layout 1 1 10 1 V
+osd_layout 1 2 0 0 V
+osd_layout 1 3 8 6 V
+osd_layout 1 5 22 14 V
+osd_layout 1 13 5 1 V
+osd_layout 1 15 24 1 V
+osd_layout 1 22 15 14 V
+osd_layout 1 23 16 14 V
+osd_layout 1 24 19 1 V
+osd_layout 1 30 1 0 V
+osd_layout 1 34 10 1 H
+osd_layout 1 43 0 0 V
+osd_layout 1 98 1 14 V
+osd_layout 1 99 1 2 V
+
+# master
+set gyro_main_lpf_hz = 25
+set dynamic_gyro_notch_enabled = ON
+set dynamic_gyro_notch_q = 250
+set dynamic_gyro_notch_min_hz = 30
+set acc_hardware = MPU6000
+set acczero_x = 158
+set acczero_y = -3
+set acczero_z = -365
+set accgain_x = 4068
+set accgain_y = 4091
+set accgain_z = 4001
+set align_mag = CW270FLIP
+set mag_hardware = NONE
+set magzero_x = 10449
+set magzero_y = -3149
+set magzero_z = 31945
+set maggain_x = 2639
+set maggain_y = 282
+set maggain_z = 13464
+set baro_hardware = DPS310
+set rssi_channel = 16
+set serialrx_inverted = ON
+set serialrx_halfduplex = OFF
+set motor_pwm_rate = 50
+set motor_pwm_protocol = STANDARD
+set throttle_idle =  5.000
+set failsafe_procedure = RTH
+set platform_type = AIRPLANE
+set model_preview_type = 8
+set small_angle = 180
+set imu_acc_ignore_rate = 10
+set applied_defaults = 3
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set airmode_type = STICK_CENTER_ONCE
+set nav_wp_radius = 5000
+set nav_wp_safe_distance = 25000
+set nav_rth_climb_first = OFF
+set nav_rth_allow_landing = NEVER
+set nav_rth_altitude = 12000
+set nav_rth_home_altitude = 6000
+set nav_fw_cruise_thr = 1310
+set nav_fw_max_thr = 1600
+set nav_fw_bank_angle = 30
+set nav_fw_dive_angle = 12
+set nav_fw_loiter_radius = 10000
+set nav_fw_control_smoothness = 2
+set nav_fw_launch_velocity = 180
+set nav_fw_launch_accel = 1500
+set nav_fw_launch_max_angle = 180
+set nav_fw_launch_thr = 1670
+set nav_fw_launch_idle_thr = 1500
+set nav_fw_launch_motor_delay = 100
+set nav_fw_launch_timeout = 10000
+set nav_fw_launch_climb_angle = 28
+set nav_fw_allow_manual_thr_increase = ON
+set osd_video_system = PAL
+set osd_time_alarm = 20
+set osd_alt_alarm = 120
+set i2c_speed = 800KHZ
+set name = dart
+set vtx_band = 5
+set vtx_power = 2
+
+# profile
+profile 1
+
+set fw_p_pitch = 10
+set fw_i_pitch = 15
+set fw_ff_pitch = 70
+set fw_i_roll = 8
+set fw_ff_roll = 35
+set fw_p_yaw = 20
+set fw_i_yaw = 5
+set fw_ff_yaw = 100
+set max_angle_inclination_rll = 450
+set fw_loiter_direction = LEFT
+set fw_turn_assist_pitch_gain =  0.200
+set nav_fw_pos_z_p = 20
+set nav_fw_pos_z_d = 5
+set nav_fw_pos_xy_p = 50
+set d_boost_factor =  1.000
+set fw_level_pitch_trim =  6.000
+set rc_expo = 30
+set rc_yaw_expo = 30
+set roll_rate = 18
+set pitch_rate = 9
+set yaw_rate = 3
+set manual_rc_expo = 60
+
+# profile
+profile 2
+
+
+# profile
+profile 3
+
+
+# battery_profile
+battery_profile 1
+
+set vbat_min_cell_voltage = 320
+set battery_capacity = 1300
+set battery_capacity_warning = 650
+set battery_capacity_critical = 260
+
+# battery_profile
+battery_profile 2
+
+
+# battery_profile
+battery_profile 3
+
+
+# restore original profile selection
+profile 1
+battery_profile 1
+
+# save configuration
+save
+
+# 
