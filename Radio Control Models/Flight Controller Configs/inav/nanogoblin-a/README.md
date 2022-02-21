@@ -1,0 +1,2 @@
+Strix Nano Goblin - A
+=====================
