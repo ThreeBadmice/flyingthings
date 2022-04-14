@@ -444,7 +444,7 @@ set fw_i_pitch = 5
 
 set fw_d_pitch = 5
 
-set fw_ff_pitch = 70
+set fw_ff_pitch = 82
 
 set fw_p_roll = 15
 
@@ -482,9 +482,9 @@ set rc_expo = 20
 
 set rc_yaw_expo = 30
 
-set roll_rate = 18
+set roll_rate = 25
 
-set pitch_rate = 9
+set pitch_rate = 11
 
 set yaw_rate = 3
 
