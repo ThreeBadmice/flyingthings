@@ -198,6 +198,8 @@ aux 12 15 4 900 1300
 
 # temp_sensor
 
+temp_sensor 0 1 0 -100 650 3 
+
 
 
 # wp
@@ -234,7 +236,7 @@ osd_layout 0 12 23 12 V
 
 osd_layout 0 13 1 7 V
 
-osd_layout 0 14 24 1 V
+osd_layout 0 14 25 1 V
 
 osd_layout 0 15 1 6 V
 
@@ -242,7 +244,7 @@ osd_layout 0 22 12 14 V
 
 osd_layout 0 23 13 14 V
 
-osd_layout 0 24 12 2 V
+osd_layout 0 24 12 1 V
 
 osd_layout 0 25 23 6 V
 
@@ -250,13 +252,13 @@ osd_layout 0 26 24 7 V
 
 osd_layout 0 28 23 12 H
 
-osd_layout 0 29 0 1 V
+osd_layout 0 29 0 0 V
 
-osd_layout 0 30 0 3 V
+osd_layout 0 30 1 2 V
 
-osd_layout 0 31 24 2 V
+osd_layout 0 31 25 3 V
 
-osd_layout 0 34 10 1 V
+osd_layout 0 34 10 0 V
 
 osd_layout 0 35 1 11 V
 
@@ -289,6 +291,8 @@ osd_layout 1 24 12 2 V
 osd_layout 1 34 9 1 V
 
 osd_layout 1 43 0 0 V
+
+osd_layout 1 88 21 14 V
 
 osd_layout 1 98 1 13 V
 
@@ -326,7 +330,7 @@ osd_layout 2 30 1 2 V
 
 osd_layout 2 33 2 11 V
 
-osd_layout 2 34 12 4 V
+osd_layout 2 34 9 0 V
 
 osd_layout 2 46 23 7 V
 
@@ -419,8 +423,6 @@ set nav_fw_allow_manual_thr_increase = ON
 set osd_video_system = PAL
 
 set osd_crosshairs_style = TYPE5
-
-set i2c_speed = 800KHZ
 
 set name = ng-a
 
