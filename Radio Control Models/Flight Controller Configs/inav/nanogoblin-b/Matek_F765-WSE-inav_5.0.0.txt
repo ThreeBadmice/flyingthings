@@ -1,4 +1,7 @@
-diff all
+
+Entering CLI Mode, type 'exit' to return, or 'help'
+
+# diff all
 
 # version
 # INAV/MATEKF765SE 5.0.0 Jun 20 2022 / 11:23:26 (d2adf35c)
@@ -150,10 +153,10 @@ osd_layout 2 98 1 14 H
 set gyro_main_lpf_hz = 25
 set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 30
-set gyro_zero_x = -15
-set gyro_zero_y = -4
-set gyro_zero_z = -2
-set ins_gravity_cmss =  978.927
+set gyro_zero_x = -13
+set gyro_zero_y = 12
+set gyro_zero_z = -15
+set ins_gravity_cmss =  979.287
 set acc_hardware = ICM42605
 set acczero_x = -2
 set acczero_y = 1
@@ -164,6 +167,7 @@ set accgain_z = 4097
 set align_mag = CW270FLIP
 set mag_hardware = NONE
 set baro_hardware = SPL06
+set rssi_channel = 16
 set motor_pwm_protocol = STANDARD
 set failsafe_procedure = RTH
 set platform_type = AIRPLANE
