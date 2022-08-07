@@ -27,8 +27,8 @@ smix 2 2 0 -50 0 -1
 smix 3 2 1 50 0 -1
 
 # servo
-servo 1 1200 1800 1500 -100
-servo 2 1200 1800 1500 100
+servo 1 1200 1800 1457 -100
+servo 2 1200 1800 1504 100
 
 # safehome
 
@@ -150,10 +150,10 @@ osd_layout 2 98 1 14 H
 set gyro_main_lpf_hz = 25
 set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 30
-set gyro_zero_x = -13
-set gyro_zero_y = -1
-set gyro_zero_z = 1
-set ins_gravity_cmss =  981.085
+set gyro_zero_x = -15
+set gyro_zero_y = -4
+set gyro_zero_z = -2
+set ins_gravity_cmss =  978.927
 set acc_hardware = ICM42605
 set acczero_x = -2
 set acczero_y = 1
@@ -206,10 +206,11 @@ profile 1
 set fw_p_pitch = 15
 set fw_i_pitch = 5
 set fw_d_pitch = 5
-set fw_ff_pitch = 70
+set fw_ff_pitch = 144
 set fw_p_roll = 15
 set fw_i_roll = 3
 set fw_d_roll = 7
+set fw_ff_roll = 67
 set fw_p_yaw = 20
 set fw_i_yaw = 0
 set fw_ff_yaw = 100
@@ -225,8 +226,8 @@ set d_boost_max =  1.000
 set fw_level_pitch_trim =  6.000
 set rc_expo = 20
 set rc_yaw_expo = 30
-set roll_rate = 18
-set pitch_rate = 9
+set roll_rate = 19
+set pitch_rate = 8
 set yaw_rate = 3
 set manual_rc_expo = 30
 
