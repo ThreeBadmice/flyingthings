@@ -84,21 +84,22 @@ aux 0 0 0 1700 2100
 aux 1 1 1 900 1300
 aux 2 12 1 1700 2100
 aux 3 10 2 1700 2100
-aux 4 11 2 1300 1700
+aux 4 11 4 1700 2100
 aux 5 28 5 1700 2100
-aux 6 3 2 1300 1700
-aux 7 21 3 1700 2100
-aux 8 37 3 1300 1700
-aux 9 42 6 1300 1700
-aux 10 43 6 1700 2100
-aux 11 26 4 1300 1700
-aux 12 55 4 1700 2100
+aux 6 3 4 1300 2100
+aux 7 5 4 1300 1700
+aux 8 21 3 1700 2100
+aux 9 37 3 1300 1700
+aux 10 42 6 1300 1700
+aux 11 43 6 1700 2100
+aux 12 55 2 1275 1675
 
 # adjrange
 
 # rxrange
 
 # temp_sensor
+temp_sensor 0 1 0 -200 600 3 
 
 # wp
 #wp 0 invalid
@@ -133,10 +134,44 @@ osd_layout 0 35 1 11 V
 osd_layout 0 40 23 12 V
 osd_layout 0 41 24 4 V
 osd_layout 0 42 24 5 V
-osd_layout 0 100 24 8 V
+osd_layout 0 88 8 13 V
+osd_layout 0 100 24 10 V
 osd_layout 0 105 9 14 V
-osd_layout 1 41 1 8 V
-osd_layout 1 42 1 7 V
+osd_layout 0 124 24 9 V
+osd_layout 0 129 9 13 H
+osd_layout 1 0 1 1 V
+osd_layout 1 1 25 15 V
+osd_layout 1 9 15 15 V
+osd_layout 1 11 21 15 V
+osd_layout 1 13 11 15 V
+osd_layout 1 14 25 1 V
+osd_layout 1 15 0 15 V
+osd_layout 1 26 6 15 V
+osd_layout 2 0 1 2 V
+osd_layout 2 1 25 13 V
+osd_layout 2 3 8 6 V
+osd_layout 2 7 13 14 V
+osd_layout 2 11 1 10 V
+osd_layout 2 13 2 6 V
+osd_layout 2 14 6 3 V
+osd_layout 2 15 1 7 V
+osd_layout 2 22 7 14 V
+osd_layout 2 23 1 14 V
+osd_layout 2 24 13 1 V
+osd_layout 2 26 1 8 V
+osd_layout 2 29 1 1 V
+osd_layout 2 30 1 5 V
+osd_layout 2 31 24 2 V
+osd_layout 2 33 1 9 V
+osd_layout 2 36 2 12 H
+osd_layout 2 39 25 14 V
+osd_layout 2 44 0 0 V
+osd_layout 2 86 24 11 V
+osd_layout 2 87 24 10 V
+osd_layout 2 88 25 12 V
+osd_layout 2 98 4 5 H
+osd_layout 2 105 18 14 V
+osd_layout 2 129 10 2 V
 
 # master
 set gyro_main_lpf_hz = 25
@@ -164,7 +199,7 @@ set serialrx_halfduplex = ON
 set blackbox_rate_denom = 32
 set motor_pwm_protocol = STANDARD
 set failsafe_procedure = RTH
-set align_board_pitch = 30
+set align_board_pitch = 50
 set model_preview_type = 8
 set small_angle = 180
 set imu_acc_ignore_rate = 9
@@ -178,7 +213,7 @@ set nav_wp_safe_distance = 25000
 set nav_rth_climb_first = OFF
 set nav_rth_allow_landing = FS_ONLY
 set nav_rth_altitude = 10000
-set nav_rth_home_altitude = 6000
+set nav_rth_home_altitude = 7500
 set nav_fw_bank_angle = 45
 set nav_fw_loiter_radius = 10000
 set nav_fw_control_smoothness = 2
@@ -190,12 +225,11 @@ set nav_fw_launch_end_time = 2998
 set nav_fw_launch_timeout = 10000
 set nav_fw_launch_climb_angle = 28
 set nav_fw_allow_manual_thr_increase = ON
-set osd_crosshairs_style = AIRCRAFT
-set i2c_speed = 800KHZ
+set osd_alt_alarm = 300
+set osd_crosshairs_style = TYPE5
 set name = dartb
 set vtx_band = 5
-set vtx_power = 2
-set vtx_low_power_disarm = UNTIL_FIRST_ARM
+set vtx_low_power_disarm = ON
 
 # profile
 profile 1
@@ -243,7 +277,7 @@ set battery_capacity_warning = 260
 set battery_capacity_critical = 130
 set throttle_idle =  5.000
 set nav_fw_cruise_thr = 1320
-set nav_fw_launch_thr = 1760
+set nav_fw_launch_thr = 1800
 set nav_fw_launch_idle_thr = 1630
 
 # battery_profile
