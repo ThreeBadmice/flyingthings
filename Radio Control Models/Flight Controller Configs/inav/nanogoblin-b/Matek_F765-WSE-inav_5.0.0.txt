@@ -1,7 +1,4 @@
-
-Entering CLI Mode, type 'exit' to return, or 'help'
-
-# diff all
+diff all
 
 # version
 # INAV/MATEKF765SE 5.0.0 Jun 20 2022 / 11:23:26 (d2adf35c)
@@ -85,14 +82,16 @@ serial 7 2048 115200 115200 0 115200
 aux 0 0 0 1700 2100
 aux 1 1 1 900 1300
 aux 2 12 1 1700 2100
-aux 3 11 2 1300 1700
+aux 3 53 4 1700 2100
 aux 4 10 2 1700 2100
 aux 5 28 5 1700 2100
-aux 6 3 2 1300 1700
+aux 6 3 4 1300 1700
 aux 7 21 3 1700 2100
 aux 8 37 3 1300 1700
-aux 9 13 4 1700 2100
-aux 10 15 4 900 1300
+aux 9 42 6 1300 1700
+aux 10 43 6 1700 2100
+aux 11 13 0 1300 1700
+aux 12 55 2 1300 1700
 
 # adjrange
 
@@ -136,27 +135,29 @@ osd_layout 0 40 24 11 V
 osd_layout 0 41 24 4 V
 osd_layout 0 42 24 5 V
 osd_layout 0 46 24 8 V
-osd_layout 0 86 24 10 V
+osd_layout 0 86 24 10 H
+osd_layout 0 87 23 10 V
 osd_layout 0 88 24 10 H
 osd_layout 0 100 24 7 V
 osd_layout 0 105 8 14 V
 osd_layout 0 124 24 9 V
-osd_layout 1 0 25 1 V
-osd_layout 1 9 1 1 V
-osd_layout 1 13 13 1 V
-osd_layout 1 40 1 14 V
+osd_layout 1 0 26 15 V
+osd_layout 1 1 0 15 V
+osd_layout 1 9 6 15 V
+osd_layout 1 13 17 15 V
+osd_layout 1 15 11 15 V
+osd_layout 1 26 22 15 V
+osd_layout 1 30 0 1 V
+osd_layout 1 40 14 11 H
 osd_layout 2 44 0 0 V
-osd_layout 2 45 0 0 V
 osd_layout 2 98 1 14 H
 
 # master
 set gyro_main_lpf_hz = 25
 set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 30
-set gyro_zero_x = -13
-set gyro_zero_y = 12
-set gyro_zero_z = -15
-set ins_gravity_cmss =  979.287
+set gyro_zero_x = -14
+set ins_gravity_cmss =  975.146
 set acc_hardware = ICM42605
 set acczero_x = -2
 set acczero_y = 1
@@ -196,12 +197,14 @@ set nav_fw_launch_timeout = 10000
 set nav_fw_launch_climb_angle = 25
 set nav_fw_allow_manual_thr_increase = ON
 set osd_video_system = PAL
-set osd_time_alarm = 40
-set osd_alt_alarm = 300
+set osd_rssi_alarm = 25
+set osd_time_alarm = 45
+set osd_alt_alarm = 1000
+set osd_dist_alarm = 3000
+set osd_gforce_alarm =  3.000
 set osd_crosshairs_style = TYPE5
 set osd_main_voltage_decimals = 2
 set vtx_band = 5
-set vtx_power = 2
 set vtx_low_power_disarm = ON
 
 # profile
@@ -252,7 +255,7 @@ set battery_capacity = 3500
 set battery_capacity_warning = 700
 set battery_capacity_critical = 350
 set throttle_idle =  5.000
-set nav_fw_cruise_thr = 1250
+set nav_fw_cruise_thr = 1270
 set nav_fw_min_thr = 1100
 set nav_fw_launch_thr = 1850
 set nav_fw_launch_idle_thr = 1600
