@@ -36,8 +36,9 @@ serial 4 0 115200 57600 0 115200
 led 0 0,0::L:1
 
 # aux
-aux 0 0 0 1700 2100 0 0
-aux 1 1 1 900 2100 0 0
+aux 0 0 4 1700 2100 0 0
+aux 1 1 5 900 1200 0 0
+aux 2 2 5 1300 1700 0 0
 
 # vtxtable
 vtxtable bands 5
@@ -61,6 +62,7 @@ set dyn_lpf_gyro_min_hz = 0
 set dyn_lpf_gyro_max_hz = 350
 set acc_calibration = -63,-15,44,1
 set mag_hardware = NONE
+set rssi_channel = 16
 set blackbox_p_ratio = 16
 set dshot_bidir = ON
 set vbat_max_cell_voltage = 422
@@ -69,36 +71,47 @@ set small_angle = 180
 set gps_provider = UBLOX
 set gps_sbas_mode = AUTO
 set thrust_linear = 25
-set osd_vbat_pos = 353
-set osd_rssi_pos = 311
+set osd_warn_rssi = ON
+set osd_rssi_alarm = 40
+set osd_vbat_pos = 2433
+set osd_rssi_pos = 2145
 set osd_link_quality_pos = 279
 set osd_rssi_dbm_pos = 345
 set osd_tim_1_pos = 295
 set osd_tim_2_pos = 2487
-set osd_flymode_pos = 2445
-set osd_throttle_pos = 2455
-set osd_vtx_channel_pos = 2369
-set osd_current_pos = 2432
-set osd_mah_drawn_pos = 2465
-set osd_craft_name_pos = 2474
+set osd_flymode_pos = 2401
+set osd_throttle_pos = 2337
+set osd_vtx_channel_pos = 2497
+set osd_crosshairs_pos = 2253
+set osd_ah_sbar_pos = 2254
+set osd_ah_pos = 2126
+set osd_current_pos = 2272
+set osd_mah_drawn_pos = 2456
+set osd_craft_name_pos = 2472
 set osd_display_name_pos = 490
-set osd_gps_speed_pos = 2423
+set osd_gps_speed_pos = 2241
 set osd_gps_lon_pos = 288
 set osd_gps_lat_pos = 320
-set osd_gps_sats_pos = 2391
-set osd_home_dir_pos = 2383
+set osd_gps_sats_pos = 2105
+set osd_home_dir_pos = 2507
 set osd_home_dist_pos = 2509
-set osd_flight_dist_pos = 139
-set osd_altitude_pos = 471
+set osd_flight_dist_pos = 2519
+set osd_compass_bar_pos = 2090
+set osd_altitude_pos = 2209
 set osd_pidrate_profile_pos = 214
-set osd_warnings_pos = 14698
-set osd_avg_cell_voltage_pos = 14689
-set osd_disarmed_pos = 2497
+set osd_warnings_pos = 14664
+set osd_avg_cell_voltage_pos = 14753
+set osd_disarmed_pos = 2186
+set osd_nheading_pos = 2125
+set osd_core_temp_pos = 2264
+set osd_stat_battery = ON
+set osd_stat_max_g_force = ON
 set debug_mode = GYRO_SCALED
 set vtx_band = 5
-set vtx_channel = 3
-set vtx_power = 1
-set vtx_freq = 5732
+set vtx_channel = 1
+set vtx_power = 2
+set vtx_low_power_disarm = ON
+set vtx_freq = 5658
 set gyro_1_sensor_align = DEFAULT
 set name = Chimera 7 Pro
 
