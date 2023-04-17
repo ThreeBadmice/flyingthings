@@ -1,4 +1,4 @@
-diff all
+# diff all
 
 # version
 # INAV/MATEKF765SE 5.0.0 Jun 20 2022 / 11:23:26 (d2adf35c)
@@ -92,6 +92,7 @@ aux 9 42 6 1300 1700
 aux 10 43 6 1700 2100
 aux 11 13 0 1300 1700
 aux 12 55 2 1300 1700
+aux 13 47 0 900 1300
 
 # adjrange
 
@@ -157,7 +158,8 @@ set gyro_main_lpf_hz = 25
 set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 30
 set gyro_zero_x = -14
-set ins_gravity_cmss =  975.146
+set gyro_zero_y = -3
+set ins_gravity_cmss =  983.973
 set acc_hardware = ICM42605
 set acczero_x = -2
 set acczero_y = 1
@@ -177,6 +179,7 @@ set small_angle = 180
 set imu_acc_ignore_rate = 9
 set imu_acc_ignore_slope = 5
 set applied_defaults = 3
+set gps_provider = UBLOX7
 set gps_sbas_mode = EGNOS
 set gps_ublox_use_galileo = ON
 set airmode_type = STICK_CENTER_ONCE
