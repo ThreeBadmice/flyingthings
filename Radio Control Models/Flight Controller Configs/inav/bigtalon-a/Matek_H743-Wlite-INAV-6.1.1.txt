@@ -99,37 +99,41 @@ aux 13 48 4 1325 1725
 #wp 0 invalid
 
 # OSD [osd_layout]
-osd_layout 0 0 2 4 V
-osd_layout 0 1 2 11 V
+osd_layout 0 0 2 3 V
+osd_layout 0 1 1 13 V
 osd_layout 0 2 0 0 V
 osd_layout 0 3 8 6 V
 osd_layout 0 4 8 6 V
-osd_layout 0 5 23 12 V
-osd_layout 0 6 23 11 V
-osd_layout 0 7 2 10 V
-osd_layout 0 9 1 9 V
-osd_layout 0 10 0 12 V
+osd_layout 0 5 23 14 V
+osd_layout 0 6 23 13 V
+osd_layout 0 7 1 12 V
+osd_layout 0 9 0 10 V
+osd_layout 0 10 1 14 V
 osd_layout 0 11 2 8 V
-osd_layout 0 12 24 10 V
-osd_layout 0 13 2 6 V
-osd_layout 0 14 19 1 V
-osd_layout 0 15 1 5 V
-osd_layout 0 22 13 12 V
-osd_layout 0 23 15 12 V
-osd_layout 0 24 11 1 V
-osd_layout 0 25 23 5 V
-osd_layout 0 26 24 7 V
+osd_layout 0 12 24 11 V
+osd_layout 0 13 2 7 V
+osd_layout 0 14 1 4 V
+osd_layout 0 15 1 6 V
+osd_layout 0 22 13 14 V
+osd_layout 0 23 16 14 V
+osd_layout 0 24 13 1 V
+osd_layout 0 25 7 6 V
+osd_layout 0 26 24 8 V
 osd_layout 0 28 23 11 H
 osd_layout 0 29 0 0 V
 osd_layout 0 30 1 2 V
 osd_layout 0 31 24 1 V
-osd_layout 0 34 9 0 V
+osd_layout 0 34 11 0 V
+osd_layout 0 35 1 11 V
+osd_layout 0 40 23 12 V
 osd_layout 0 41 24 3 V
 osd_layout 0 42 24 4 V
-osd_layout 0 46 24 8 V
-osd_layout 0 86 24 5 V
-osd_layout 0 87 24 6 V
-osd_layout 0 105 7 12 V
+osd_layout 0 46 24 7 V
+osd_layout 0 86 24 5 H
+osd_layout 0 87 24 5 V
+osd_layout 0 100 24 10 V
+osd_layout 0 105 8 14 V
+osd_layout 0 124 24 9 V
 
 # Programming: logic
 logic 0 1 -1 4 1 12 0 0 0
@@ -147,19 +151,18 @@ logic 5 1 2 25 0 3 0 0 0
 set gyro_main_lpf_hz = 25
 set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 30
-set gyro_zero_y = -5
-set gyro_zero_z = 2
-set ins_gravity_cmss =  984.287
+set gyro_zero_x = -4
+set gyro_zero_z = 3
+set ins_gravity_cmss =  984.800
 set acc_hardware = ICM42605
-set acczero_x = -10
-set acczero_y = 4
-set acczero_z = 5
-set accgain_x = 4089
-set accgain_y = 4092
-set accgain_z = 4092
+set acczero_x = -6
+set acczero_y = -3
+set acczero_z = 13
+set accgain_y = 4091
+set accgain_z = 4110
 set align_mag = CW270FLIP
 set mag_hardware = NONE
-set baro_hardware = SPL06
+set baro_hardware = DPS310
 set rssi_channel = 16
 set blackbox_rate_denom = 32
 set motor_pwm_protocol = STANDARD
@@ -201,7 +204,6 @@ set osd_main_voltage_decimals = 2
 set i2c_speed = 800KHZ
 set name = BT
 set vtx_band = 5
-set vtx_power = 2
 
 # profile
 profile 1
