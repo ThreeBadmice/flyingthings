@@ -90,7 +90,7 @@ aux 9 37 5 1300 1700
 aux 10 42 4 1300 1700
 aux 11 43 4 1700 2100
 aux 12 47 0 900 1400
-aux 13 48 4 1325 1725
+aux 13 48 4 1300 1700
 
 # Adjustments [adjrange]
 
@@ -224,7 +224,7 @@ set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 30
 set gyro_zero_x = -4
 set gyro_zero_z = 3
-set ins_gravity_cmss =  987.147
+set ins_gravity_cmss =  985.094
 set acc_hardware = ICM42605
 set acczero_x = -6
 set acczero_y = -3
@@ -259,7 +259,6 @@ set nav_rth_alt_control_override = ON
 set nav_rth_altitude = 12000
 set nav_rth_home_altitude = 10000
 set nav_fw_bank_angle = 25
-set nav_fw_climb_angle = 15
 set nav_fw_dive_angle = 10
 set nav_fw_loiter_radius = 20000
 set fw_loiter_direction = LEFT
@@ -371,11 +370,11 @@ set yaw_rate = 3
 # battery_profile
 battery_profile 1
 
-set vbat_min_cell_voltage = 280
-set vbat_warning_cell_voltage = 330
+set vbat_min_cell_voltage = 285
+set vbat_warning_cell_voltage = 320
 set battery_capacity = 15000
 set battery_capacity_warning = 7500
-set battery_capacity_critical = 4500
+set battery_capacity_critical = 3750
 set throttle_idle =  5.000
 set nav_fw_launch_idle_thr = 1300
 
