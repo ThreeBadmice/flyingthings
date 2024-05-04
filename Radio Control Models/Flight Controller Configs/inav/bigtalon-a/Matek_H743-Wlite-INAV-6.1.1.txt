@@ -1,4 +1,7 @@
-diff all
+
+Entering CLI Mode, type 'exit' to return, or 'help'
+
+# diff all
 
 # version
 # INAV/MATEKH743 6.1.1 Jun 13 2023 / 11:52:23 (42ced253)
@@ -65,6 +68,7 @@ blackbox PEAKS_Y
 
 # Ports
 serial 1 2 115200 115200 0 115200
+serial 6 65536 115200 115200 0 115200
 serial 7 2048 115200 115200 0 115200
 
 # LEDs
@@ -133,8 +137,9 @@ osd_layout 0 86 24 5 H
 osd_layout 0 87 24 5 V
 osd_layout 0 100 24 10 V
 osd_layout 0 105 8 14 V
+osd_layout 0 120 1 7 V
 osd_layout 0 124 24 9 V
-osd_layout 0 129 11 13 H
+osd_layout 0 129 11 13 V
 osd_layout 1 0 2 3 V
 osd_layout 1 1 1 11 V
 osd_layout 1 2 0 0 V
@@ -167,6 +172,7 @@ osd_layout 1 46 23 8 V
 osd_layout 1 87 24 6 V
 osd_layout 1 100 24 10 V
 osd_layout 1 105 8 14 V
+osd_layout 1 120 1 6 V
 osd_layout 1 124 24 9 V
 osd_layout 1 129 11 13 V
 osd_layout 2 0 1 3 V
@@ -200,6 +206,7 @@ osd_layout 2 41 24 3 V
 osd_layout 2 42 24 4 V
 osd_layout 2 46 23 8 V
 osd_layout 2 105 7 14 V
+osd_layout 2 120 1 6 V
 osd_layout 2 124 24 5 V
 osd_layout 2 129 10 13 V
 
@@ -222,14 +229,16 @@ set gyro_main_lpf_hz = 25
 set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 30
 set gyro_zero_x = -4
+set gyro_zero_y = 1
 set gyro_zero_z = 3
-set ins_gravity_cmss =  984.921
+set ins_gravity_cmss =  983.885
 set acc_hardware = ICM42605
 set acczero_x = -6
 set acczero_y = -3
 set acczero_z = 13
 set accgain_y = 4091
 set accgain_z = 4110
+set rangefinder_hardware = BENEWAKE
 set align_mag = CW270FLIP
 set mag_hardware = NONE
 set baro_hardware = DPS310
@@ -279,6 +288,7 @@ set osd_main_voltage_decimals = 2
 set i2c_speed = 800KHZ
 set name = BT
 set vtx_band = 5
+set vtx_power = 2
 
 # profile
 profile 1
