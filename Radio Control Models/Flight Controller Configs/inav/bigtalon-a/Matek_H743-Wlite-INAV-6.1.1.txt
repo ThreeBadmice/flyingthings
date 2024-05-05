@@ -1,7 +1,4 @@
-
-Entering CLI Mode, type 'exit' to return, or 'help'
-
-# diff all
+diff all
 
 # version
 # INAV/MATEKH743 6.1.1 Jun 13 2023 / 11:52:23 (42ced253)
@@ -228,10 +225,10 @@ logic 7 0 -1 1 3 0 0 1 0
 set gyro_main_lpf_hz = 25
 set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 30
-set gyro_zero_x = -4
+set gyro_zero_x = -3
 set gyro_zero_y = 1
 set gyro_zero_z = 3
-set ins_gravity_cmss =  983.885
+set ins_gravity_cmss =  988.534
 set acc_hardware = ICM42605
 set acczero_x = -6
 set acczero_y = -3
@@ -296,10 +293,11 @@ profile 1
 set fw_p_pitch = 15
 set fw_i_pitch = 5
 set fw_d_pitch = 5
-set fw_ff_pitch = 80
+set fw_ff_pitch = 255
 set fw_p_roll = 15
 set fw_i_roll = 3
 set fw_d_roll = 7
+set fw_ff_roll = 111
 set fw_p_yaw = 50
 set fw_i_yaw = 0
 set fw_d_yaw = 20
@@ -315,8 +313,8 @@ set d_boost_max =  1.000
 set fw_level_pitch_trim =  6.000
 set rc_expo = 30
 set rc_yaw_expo = 30
-set roll_rate = 18
-set pitch_rate = 9
+set roll_rate = 10
+set pitch_rate = 5
 set yaw_rate = 3
 set manual_rc_expo = 25
 
