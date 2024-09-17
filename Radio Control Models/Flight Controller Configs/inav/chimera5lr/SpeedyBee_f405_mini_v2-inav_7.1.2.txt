@@ -72,8 +72,7 @@ aux 8 55 6 1300 1700
 # temp_sensor
 
 # Mission Control Waypoints [wp]
-#wp 1 valid
-wp 0 1 511335001 13060366 621 0 0 1 165
+#wp 0 invalid
 
 # OSD [osd_layout]
 osd_layout 0 0 1 4 V
@@ -133,9 +132,9 @@ set gyro_dyn_lpf_curve_expo = 3
 set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 100
 set setpoint_kalman_q = 200
-set gyro_zero_y = -5
+set gyro_zero_y = -6
 set gyro_zero_z = -5
-set ins_gravity_cmss =  982.083
+set ins_gravity_cmss =  981.946
 set acc_hardware = ICM42605
 set acczero_z = 17
 set accgain_x = 4087
@@ -148,6 +147,7 @@ set rssi_channel = 16
 set serialrx_halfduplex = OFF
 set blackbox_rate_denom = 2
 set motor_pwm_protocol = DSHOT300
+set failsafe_procedure = RTH
 set align_board_pitch = -2
 set vbat_scale = 1130
 set applied_defaults = 2
@@ -156,6 +156,8 @@ set gps_sbas_mode = EGNOS
 set gps_ublox_use_galileo = ON
 set gps_ublox_use_beidou = ON
 set airmode_type = THROTTLE_THRESHOLD
+set nav_rth_altitude = 5000
+set nav_rth_home_altitude = 2000
 set osd_video_system = PAL
 set osd_crosshairs_style = TYPE7
 set name = CHIMERA5LR
