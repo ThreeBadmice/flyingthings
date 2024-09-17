@@ -1,4 +1,7 @@
-diff all
+
+Entering CLI Mode, type 'exit' to return, or 'help'
+
+# diff
 
 # version
 # INAV/SPEEDYBEEF405MINI 7.1.2 Jun  1 2024 / 00:43:32 (4e1e59eb)
@@ -6,9 +9,6 @@ diff all
 
 # start the command batch
 batch start
-
-# reset configuration to default settings
-defaults noreboot
 
 # resources
 
@@ -118,7 +118,14 @@ set dynamic_gyro_notch_min_hz = 100
 set setpoint_kalman_q = 200
 set gyro_zero_y = -5
 set gyro_zero_z = -5
+set ins_gravity_cmss =  980.327
 set acc_hardware = ICM42605
+set acczero_x = -1
+set acczero_y = -1
+set acczero_z = 21
+set accgain_x = 4086
+set accgain_y = 4101
+set accgain_z = 4091
 set align_mag = CW270FLIP
 set mag_hardware = NONE
 set baro_hardware = DPS310
@@ -156,14 +163,6 @@ mmix 3  1.000  1.000 -1.000 -1.000
 
 # Mixer: servo mixer
 
-# mixer_profile
-mixer_profile 2
-
-
-# Mixer: motor mixer
-
-# Mixer: servo mixer
-
 # profile
 profile 1
 
@@ -188,32 +187,14 @@ set roll_rate = 70
 set pitch_rate = 70
 set yaw_rate = 60
 
-# profile
-profile 2
-
-
-# profile
-profile 3
-
-
 # battery_profile
 battery_profile 1
 
-
-# battery_profile
-battery_profile 2
-
-
-# battery_profile
-battery_profile 3
-
-
-# restore original profile selection
-mixer_profile 1
-profile 1
-battery_profile 1
 
 # save configuration
 save
+
+# end the command batch
+batch end
 
 # 
