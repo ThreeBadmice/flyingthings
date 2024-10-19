@@ -55,12 +55,12 @@ serial 5 2 115200 115200 0 115200
 # LED mode_color
 
 # Modes [aux]
-aux 0 0 4 1700 2100
+aux 0 0 4 1725 2100
 aux 1 1 5 900 1300
-aux 2 53 7 1650 2100
+aux 2 11 7 1700 2100
 aux 3 10 6 1700 2100
 aux 4 28 8 1700 2100
-aux 5 3 7 1300 2100
+aux 5 3 7 1300 1700
 aux 6 42 10 1325 1725
 aux 7 43 10 1700 2100
 aux 8 55 6 1300 1700
@@ -103,7 +103,7 @@ osd_layout 0 35 24 11 V
 osd_layout 0 40 23 10 V
 osd_layout 0 41 24 5 V
 osd_layout 0 42 24 6 V
-osd_layout 0 46 23 9 V
+osd_layout 0 46 23 9 H
 osd_layout 0 129 11 3 V
 osd_layout 1 0 1 1 V
 osd_layout 1 1 1 14 V
@@ -132,9 +132,9 @@ set gyro_dyn_lpf_curve_expo = 3
 set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 100
 set setpoint_kalman_q = 200
-set gyro_zero_y = -6
+set gyro_zero_y = -3
 set gyro_zero_z = -5
-set ins_gravity_cmss =  981.946
+set ins_gravity_cmss =  982.857
 set acc_hardware = ICM42605
 set acczero_z = 17
 set accgain_x = 4087
@@ -156,13 +156,17 @@ set gps_sbas_mode = EGNOS
 set gps_ublox_use_galileo = ON
 set gps_ublox_use_beidou = ON
 set airmode_type = THROTTLE_THRESHOLD
-set nav_rth_altitude = 5000
-set nav_rth_home_altitude = 2000
+set nav_auto_speed = 1200
+set nav_max_auto_speed = 1500
+set nav_manual_speed = 1000
+set nav_rth_altitude = 1500
+set nav_rth_home_altitude = 1000
+set nav_mc_bank_angle = 35
 set osd_video_system = PAL
 set osd_crosshairs_style = TYPE7
 set name = CHIMERA5LR
 set vtx_band = 5
-set vtx_power = 3
+set vtx_power = 4
 set vtx_low_power_disarm = ON
 
 # mixer_profile
@@ -229,6 +233,11 @@ battery_profile 1
 # battery_profile
 battery_profile 2
 
+set vbat_min_cell_voltage = 300
+set vbat_warning_cell_voltage = 330
+set battery_capacity = 4200
+set battery_capacity_warning = 1470
+set battery_capacity_critical = 840
 
 # battery_profile
 battery_profile 3
@@ -237,7 +246,7 @@ battery_profile 3
 # restore original profile selection
 mixer_profile 1
 profile 1
-battery_profile 1
+battery_profile 2
 
 # save configuration
 save
