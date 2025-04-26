@@ -84,7 +84,7 @@ osd_layout 0 3 8 6 V
 osd_layout 0 5 24 14 V
 osd_layout 0 6 24 13 V
 osd_layout 0 7 1 12 V
-osd_layout 0 8 11 14 V
+osd_layout 0 8 9 14 V
 osd_layout 0 9 0 9 V
 osd_layout 0 10 1 15 V
 osd_layout 0 11 1 11 V
@@ -129,10 +129,8 @@ set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 60
 set dynamic_gyro_notch_mode = 3D
 set setpoint_kalman_q = 200
-set gyro_zero_x = 1
-set gyro_zero_y = 3
-set gyro_zero_z = 1
-set ins_gravity_cmss =  981.290
+set gyro_zero_y = 2
+set ins_gravity_cmss =  982.719
 set acc_hardware = BMI270
 set acczero_x = -33
 set acczero_y = -27
@@ -151,9 +149,11 @@ set applied_defaults = 5
 set gps_ublox_use_galileo = ON
 set gps_ublox_use_beidou = ON
 set airmode_type = THROTTLE_THRESHOLD
+set osd_video_system = PAL
 set i2c_speed = 800KHZ
 set name = CHIMERA7PRO
 set vtx_band = 5
+set vtx_power = 3
 set vtx_low_power_disarm = ON
 
 # control_profile
@@ -241,6 +241,8 @@ mixer_profile 2
 # battery_profile
 battery_profile 1
 
+set vbat_min_cell_voltage = 300
+set vbat_warning_cell_voltage = 330
 
 # battery_profile
 battery_profile 2
