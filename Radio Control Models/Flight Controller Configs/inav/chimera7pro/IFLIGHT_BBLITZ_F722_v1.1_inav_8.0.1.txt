@@ -1,9 +1,10 @@
 
+Entering CLI Mode, type 'exit' to return, or 'help'
 
-# diff all 
+# diff all
 
 # version
-# INAV/IFLIGHT_BLITZ_F722 8.0.1 Mar 28 2025 / 09:52:50 (ae47bcba) 
+# INAV/IFLIGHT_BLITZ_F722 8.0.1 Apr 26 2025 / 19:25:12 (ae47bcba) 
 # GCC-13.2.1 20231009
 
 # start the command batch
@@ -129,8 +130,10 @@ set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 60
 set dynamic_gyro_notch_mode = 3D
 set setpoint_kalman_q = 200
-set gyro_zero_y = 2
-set ins_gravity_cmss =  982.719
+set gyro_zero_x = 1
+set gyro_zero_y = 3
+set gyro_zero_z = 2
+set ins_gravity_cmss =  980.693
 set acc_hardware = BMI270
 set acczero_x = -33
 set acczero_y = -27
@@ -153,8 +156,9 @@ set osd_video_system = PAL
 set i2c_speed = 800KHZ
 set name = CHIMERA7PRO
 set vtx_band = 5
-set vtx_power = 3
+set vtx_power = 4
 set vtx_low_power_disarm = ON
+set vtx_max_power_override = 1600
 
 # control_profile
 control_profile 1
