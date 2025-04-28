@@ -71,15 +71,15 @@ serial 3 2 115200 115200 0 115200
 aux 0 0 0 1300 2100
 aux 1 1 1 925 1325
 aux 2 12 1 1700 2100
-aux 3 53 4 1700 2100
-aux 4 11 2 1300 1700
-aux 5 10 2 1700 2100
-aux 6 28 5 1700 2100
-aux 7 3 4 1300 1700
-aux 8 21 3 1700 2100
-aux 9 37 3 1300 1700
-aux 10 42 6 1300 1700
-aux 11 43 6 1700 2100
+aux 3 53 5 1700 2100
+aux 4 10 3 1700 2100
+aux 5 28 6 1700 2100
+aux 6 3 5 1300 1700
+aux 7 21 2 1700 2100
+aux 8 37 2 1300 1700
+aux 9 42 4 1300 1700
+aux 10 43 4 1700 2100
+aux 11 55 3 1300 1700
 
 # Adjustments [adjrange]
 
@@ -91,7 +91,7 @@ aux 11 43 6 1700 2100
 #wp 0 invalid
 
 # OSD [osd_layout]
-osd_layout 0 0 4 4 V
+osd_layout 0 0 4 4 H
 osd_layout 0 1 4 16 V
 osd_layout 0 2 0 0 V
 osd_layout 0 3 8 6 V
@@ -102,9 +102,9 @@ osd_layout 0 7 4 15 V
 osd_layout 0 9 3 10 V
 osd_layout 0 11 4 11 V
 osd_layout 0 12 43 15 V
-osd_layout 0 13 4 6 V
+osd_layout 0 13 4 7 V
 osd_layout 0 14 43 0 V
-osd_layout 0 15 3 5 V
+osd_layout 0 15 3 6 V
 osd_layout 0 22 22 17 V
 osd_layout 0 23 24 17 V
 osd_layout 0 24 24 1 V
@@ -122,7 +122,11 @@ osd_layout 0 41 44 4 V
 osd_layout 0 42 44 5 V
 osd_layout 0 46 43 11 V
 osd_layout 0 100 44 12 V
+osd_layout 0 109 4 4 V
+osd_layout 0 110 4 5 V
+osd_layout 0 111 17 4 V
 osd_layout 0 124 44 10 V
+osd_layout 0 129 21 3 V
 osd_layout 1 0 3 0 V
 osd_layout 1 1 7 0 V
 osd_layout 1 7 31 0 V
@@ -169,10 +173,10 @@ osd_layout 3 97 19 5 V
 set gyro_main_lpf_hz = 25
 set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 30
-set gyro_zero_x = -29
-set gyro_zero_y = -14
+set gyro_zero_x = -32
+set gyro_zero_y = -16
 set gyro_zero_z = 1
-set ins_gravity_cmss =  988.590
+set ins_gravity_cmss =  983.984
 set acc_hardware = ICM42605
 set acczero_x = -5
 set acczero_y = -4
@@ -184,8 +188,6 @@ set align_mag = CW270FLIP
 set mag_hardware = NONE
 set baro_hardware = SPL06
 set rssi_channel = 16
-set serialrx_provider = SBUS
-set serialrx_inverted = ON
 set serialrx_halfduplex = OFF
 set blackbox_rate_denom = 32
 set motor_pwm_protocol = STANDARD
@@ -220,7 +222,8 @@ set nav_fw_launch_climb_angle = 25
 set nav_fw_allow_manual_thr_increase = ON
 set osd_video_system = AVATAR
 set osd_time_alarm = 40
-set osd_alt_alarm = 120
+set osd_alt_alarm = 600
+set osd_dist_alarm = 5000
 set osd_crosshairs_style = TYPE5
 set osd_main_voltage_decimals = 2
 
