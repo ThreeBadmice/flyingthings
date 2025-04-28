@@ -1,6 +1,4 @@
-
-
-# diff all 
+diff all
 
 # version
 # INAV/IFLIGHT_BLITZ_F722 8.0.1 Apr 26 2025 / 22:56:09 (6e79203b) 
@@ -129,9 +127,9 @@ set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 60
 set dynamic_gyro_notch_mode = 3D
 set setpoint_kalman_q = 200
-set gyro_zero_x = 1
-set gyro_zero_y = 1
-set ins_gravity_cmss =  984.029
+set gyro_zero_y = 3
+set gyro_zero_z = 1
+set ins_gravity_cmss =  981.493
 set acc_hardware = BMI270
 set acczero_x = -33
 set acczero_y = -27
@@ -150,6 +148,7 @@ set applied_defaults = 5
 set gps_ublox_use_galileo = ON
 set gps_ublox_use_beidou = ON
 set airmode_type = THROTTLE_THRESHOLD
+set nav_auto_speed = 750
 set osd_video_system = PAL
 set i2c_speed = 800KHZ
 set name = CHIMERA7PRO
@@ -244,7 +243,8 @@ mixer_profile 2
 battery_profile 1
 
 set vbat_min_cell_voltage = 300
-set vbat_warning_cell_voltage = 330
+set vbat_warning_cell_voltage = 320
+set nav_mc_hover_thr = 1400
 
 # battery_profile
 battery_profile 2
