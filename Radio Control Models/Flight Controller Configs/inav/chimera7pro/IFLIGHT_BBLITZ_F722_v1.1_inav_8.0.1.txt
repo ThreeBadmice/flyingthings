@@ -75,7 +75,7 @@ aux 6 55 3 1250 1700
 #wp 0 invalid
 
 # OSD [osd_layout]
-osd_layout 0 0 1 4 V
+osd_layout 0 0 1 4 H
 osd_layout 0 1 1 14 V
 osd_layout 0 2 0 0 V
 osd_layout 0 3 8 6 V
@@ -104,7 +104,12 @@ osd_layout 0 40 23 10 V
 osd_layout 0 41 24 5 V
 osd_layout 0 42 24 6 V
 osd_layout 0 46 23 9 H
+osd_layout 0 109 0 1 V
+osd_layout 0 110 7 1 V
+osd_layout 0 111 12 1 V
+osd_layout 0 112 0 4 V
 osd_layout 0 129 11 3 V
+osd_layout 0 159 18 1 V
 osd_layout 1 0 1 1 V
 osd_layout 1 1 1 14 V
 osd_layout 1 2 0 0 V
@@ -127,9 +132,10 @@ set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 60
 set dynamic_gyro_notch_mode = 3D
 set setpoint_kalman_q = 200
+set gyro_zero_x = 1
 set gyro_zero_y = 3
 set gyro_zero_z = 1
-set ins_gravity_cmss =  981.493
+set ins_gravity_cmss =  981.597
 set acc_hardware = BMI270
 set acczero_x = -33
 set acczero_y = -27
@@ -150,6 +156,7 @@ set gps_ublox_use_beidou = ON
 set airmode_type = THROTTLE_THRESHOLD
 set nav_auto_speed = 750
 set osd_video_system = PAL
+set osd_alt_alarm = 300
 set i2c_speed = 800KHZ
 set name = CHIMERA7PRO
 set vtx_band = 5
