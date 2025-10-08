@@ -164,7 +164,7 @@ set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 30
 set gyro_zero_x = -14
 set gyro_zero_y = -2
-set ins_gravity_cmss =  971.477
+set ins_gravity_cmss =  972.647
 set acc_hardware = ICM42605
 set acczero_x = -2
 set acczero_y = 1
@@ -195,6 +195,7 @@ set nav_rth_allow_landing = FS_ONLY
 set nav_rth_altitude = 10000
 set nav_rth_home_altitude = 7000
 set nav_fw_bank_angle = 45
+set nav_fw_dive_angle = 10
 set nav_fw_control_smoothness = 2
 set nav_fw_launch_max_angle = 180
 set nav_fw_launch_motor_delay = 100
@@ -207,6 +208,7 @@ set osd_time_alarm = 60
 set osd_alt_alarm = 300
 set osd_dist_alarm = 2000
 set osd_current_alarm = 5
+set osd_rssi_dbm_alarm = -100
 set osd_crosshairs_style = TYPE5
 set osd_main_voltage_decimals = 2
 set name = NG-B
@@ -305,6 +307,7 @@ set throttle_idle =  5.000
 set nav_fw_cruise_thr = 1270
 set nav_fw_min_thr = 1100
 set nav_fw_launch_thr = 1850
+set nav_fw_launch_idle_thr = 1150
 
 # battery_profile
 battery_profile 2
