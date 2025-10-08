@@ -1,4 +1,7 @@
-diff all
+
+Entering CLI Mode, type 'exit' to return, or 'help'
+
+# diff all
 
 # version
 # INAV/MATEKF765SE 6.1.1 Jun 13 2023 / 11:50:45 (42ced253)
@@ -163,8 +166,8 @@ set gyro_main_lpf_hz = 25
 set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 30
 set gyro_zero_x = -14
-set gyro_zero_y = -2
-set ins_gravity_cmss =  972.647
+set gyro_zero_y = -3
+set ins_gravity_cmss =  974.404
 set acc_hardware = ICM42605
 set acczero_x = -2
 set acczero_y = 1
@@ -174,7 +177,7 @@ set accgain_y = 4098
 set accgain_z = 4097
 set align_mag = CW270FLIP
 set mag_hardware = NONE
-set baro_hardware = SPL06
+set baro_hardware = DPS310
 set rssi_channel = 16
 set serialrx_provider = CRSF
 set motor_pwm_protocol = STANDARD
@@ -211,6 +214,7 @@ set osd_current_alarm = 5
 set osd_rssi_dbm_alarm = -100
 set osd_crosshairs_style = TYPE5
 set osd_main_voltage_decimals = 2
+set i2c_speed = 800KHZ
 set name = NG-B
 set vtx_band = 5
 set vtx_low_power_disarm = UNTIL_FIRST_ARM
